@@ -1,0 +1,167 @@
+#gender-balance,
+#average-salary,
+#rank-distribution {
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    border: 2px solid cornflowerblue;
+    border-radius: 15px;
+    background-color: rgba(95, 158, 160, 0.25);
+    /*width: 27vw;*/
+    fill: white;
+}
+/*#discipline-selector {
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid cornflowerblue;
+    border-radius: 15px;
+    background-color: rgba(95, 158, 160, 0.25);
+    width: 9vw;
+}*/
+/*#percent-of-women-professors,
+#percent-of-men-professors {
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    border: 2px solid cornflowerblue;
+    border-radius: 15px;
+    background-color: rgba(95, 158, 160, 0.25);
+    width: 40vw;
+    fill: white;
+}*/
+#service-salary,
+#phd-salary {
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    border: 2px solid cornflowerblue;
+    border-radius: 15px;
+    background-color: rgba(95, 158, 160, 0.25);
+    width: 80vw;
+    fill: white;
+}
+#gender-balance rect,
+#average-salary rect {
+    stroke-width: 2px;
+    transition: all 0.2s ease-in-out;
+}
+#gender-balance rect:nth-child(odd):not(.deselected),
+#average-salary rect:nth-child(odd):not(.deselected) {
+    fill: salmon;
+    stroke: pink;
+}
+#gender-balance rect:nth-child(even):not(.deselected),
+#average-salary rect:nth-child(even):not(.deselected) {
+    fill: blue;
+    stroke: cornflowerblue;
+}
+#gender-balance rect.deselected,
+#average-salary rect.deselected {
+    fill: black;
+    opacity: 0.5;
+    stroke: white;
+    stroke-dasharray: 0;
+    stroke-opacity: 0.25;
+    transition: all 0.2s ease-in-out;
+}
+#gender-balance rect.bar:hover,
+#average-salary rect.bar:hover {
+    opacity: 1;
+    stroke-dasharray: 0;
+}
+#gender-balance rect.deselected:hover,
+#average-salary rect.deselected:hover {
+    stroke-dasharray: 0;
+    stroke: white;
+    stroke-opacity: 0.75;
+}
+#gender-balance text.x-axis-label,
+#average-salary text.x-axis-label,
+#rank-distribution text.x-axis-label,
+#service-salary text.x-axis-label,
+#phd-salary text.x-axis-label {
+    fill: orange;
+}
+#gender-balance text.y-axis-label,
+#average-salary text.y-axis-label,
+#rank-distribution text.y-axis-label,
+#service-salary text.y-axis-label,
+#phd-salary text.y-axis-label {
+    fill: orange;
+}
+#gender-balance path.domain,
+#average-salary path.domain,
+#rank-distribution path.domain,
+#service-salary path.domain,
+#phd-salary path.domain {
+    fill: none;
+    stroke: white;
+}
+#gender-balance .grid-line line,
+#gender-balance line,
+#average-salary .grid-line line,
+#average-salary line,
+#rank-distribution .grid-line line,
+#rank-distribution line,
+#service-salary .grid-line line,
+#service-salary line,
+#phd-salary .grid-line line,
+#phd-salary line {
+    stroke: white;
+    opacity: 0.5;
+}
+
+
+#rank-distribution .stack._0 .bar:nth-child(odd) {
+    fill: #FBBBCB;
+}
+#rank-distribution .stack._1 .bar:nth-child(odd) {
+    fill: #F26B8B;
+}
+#rank-distribution .stack._2 .bar:nth-child(odd) {
+    fill: #A04242;
+}
+#rank-distribution .stack._0 .bar:nth-child(even) {
+    fill: #97dee6;
+}
+#rank-distribution .stack._1 .bar:nth-child(even) {
+    fill: #0384F5;
+}
+#rank-distribution .stack._2 .bar:nth-child(even) {
+    fill: #02438C;
+}
+#rank-distribution .dc-legend-item:nth-child(1) rect {
+    fill: #C9CDD9;
+    stroke: white;
+    stroke-width: 1px;
+}
+#rank-distribution .dc-legend-item:nth-child(2) rect {
+    fill: #7B78C0;
+    stroke: white;
+    stroke-width: 1px;
+}
+#rank-distribution .dc-legend-item:nth-child(3) rect {
+    fill: #514367;
+    stroke: white;
+    stroke-width: 1px;
+}
+
+.number-box {
+    font-size: 3rem;
+    text-align: center;
+    display: inline-block;
+    line-height: normal;
+}
+.number-box-title {
+    font-size: 1.5rem;
+}
+.fa-venus {
+    color: palevioletred;
+    font-size: 4rem;
+    vertical-align: middle;
+}
+.fa-mars {
+    color: blue;
+    font-size: 4rem;
+    vertical-align: middle;
+}
